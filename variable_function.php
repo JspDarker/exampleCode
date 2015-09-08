@@ -5,6 +5,7 @@
  * Date: 06/09/2015
  * Time: 15:44
  */
+//http://php.net/language.types.callable
 
 function foo() {
     echo "run func foo()\n";
@@ -29,6 +30,22 @@ class Foo {
         }
 
     }
+}
+
+class MyClass {
+
+    public $property = 'Hello World!';
+
+    public function MyMethod()
+    {
+        call_user_func(array($this, 'myCallbackMethod'));
+    }
+
+    public function MyCallbackMethod()
+    {
+        echo $this->property;
+    }
+
 }
 
 $f1 = new Foo;

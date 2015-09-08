@@ -1,0 +1,33 @@
+1: inputs
+	call api home-page
+	    article: only channel HGW
+        gallery: only channel HGW
+        restaurant:
+        hungry deal:
+	call api hungry deal
+2: output
+	image, image_resize, title, description, url_detail_page, url_book_now
+	image:
+	    article:
+        gallery:
+        restaurant:
+        hungry deal:
+	image_resize:
+	    image from server CDN
+	title:
+		article: title
+		gallery: title
+		restaurant: name
+		hungry deal: title
+	description:
+		article: summary
+		gallery: summary
+		restaurant: description
+		hungry deal: description
+	url_detail_page:
+		article:
+		gallery:
+		restaurant:
+		hungry deal:
+
+3: dosomething
