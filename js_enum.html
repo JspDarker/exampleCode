@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var UserStates = {
+            USER: 0,
+            MOD: 1,
+            ADMIN: 2
+        };
+        var user = {
+            state: UserStates.USER,
+            name: "Dat.Dao",
+            init: function(option) {
+                console.log(option);
+            }
+        };
+        if (user.state == UserStates.USER) {
+            // user is allowed to send kick commands
+            // process command
+            user.init(UserStates);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
